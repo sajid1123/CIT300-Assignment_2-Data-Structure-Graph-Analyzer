@@ -1,8 +1,12 @@
 # CIT300 Data Structure & Graph Performance Analyzer
 
-Java console application developed for CIT300 Data Structures and Algorithms – Graded Practical Assignment 2.
+Java console application developed for **CIT300 Data Structures and Algorithms – Graded Practical Assignment 2**.
 
-This program lets the user work with common data structures (array, stack, queue, linked list and graph) and compare how fast different algorithms work.
+## Project Overview
+
+This project is a console-based Java application created to help understand and practice how common data structures and algorithms work.
+
+The program allows users to store and manage data using five different data structures: Array, Stack, Queue, Linked List, and Graph. Users can interact with each structure through an easy-to-use menu, add and remove items, and see how they work internally. In addition, the program lets users run searching and graph traversal algorithms, counting the steps taken and measuring the time in nanoseconds to compare their performance.
 
 ## How to Run
 
@@ -18,14 +22,60 @@ This program lets the user work with common data structures (array, stack, queue
 
 ## Features
 
-- Array operations: insert, delete, search and display
-- Stack operations: push, pop, peek and display
-- Queue operations: enqueue, dequeue, peek and display
-- Linked list operations: insert, delete, search and display
-- Searching: linear search and binary search with step count and time
-- Graph operations: add vertex, add edge, display, BFS and DFS traversal
-- Performance comparison: linear vs binary search, BFS vs DFS, and complexity summary
-- Safe input handling that checks for wrong or empty input
+### 1. Array Operations
+- Insert numbers into the array
+- Automatically increases the array size when it gets full
+- Delete numbers by shifting remaining elements
+- Search for a number and return its index
+- Display all current elements in the array
+
+### 2. Stack Operations (LIFO - Last In, First Out)
+- Push: add a new number to the top of the stack
+- Pop: remove and return the top number
+- Peek: look at the top number without removing it
+- Display all items from top to bottom
+- Prevents errors when trying to pop or peek from an empty stack
+
+### 3. Queue Operations (FIFO - First In, First Out)
+- Built using a circular queue to use memory efficiently
+- Enqueue: add a number to the back of the queue
+- Dequeue: remove a number from the front of the queue
+- Peek: view the front number without removing it
+- Automatically resizes when the queue becomes full
+- Display the queue from front to rear
+
+### 4. Linked List Operations
+- Built using custom nodes where each node points to the next
+- Insert: add a new node at the end of the list
+- Delete: remove a node with a specific value and connect the list back
+- Search: find a value and get its position in the list
+- Display the full list in order
+
+### 5. Searching Algorithms & Performance
+- **Linear Search:** Checks each item one by one from start to end
+- **Binary Search:** Quickly finds items by dividing a sorted list in half
+  - Uses a sorted copy of the array so the original array order is not changed
+- Counts the number of steps (comparisons) taken
+- Measures execution time in nanoseconds
+
+### 6. Graph Operations & Traversals
+- Undirected graph built using an adjacency list
+- Add vertices (nodes) with unique names
+- Add edges (connections) between any two existing vertices
+- Display the graph showing each vertex and its connected neighbors
+- **Breadth-First Search (BFS):** Visits neighbors level by level using a queue
+- **Depth-First Search (DFS):** Explores as deep as possible down each path using recursion
+- Both BFS and DFS display the visit order, total steps, and time taken
+
+### 7. Performance Comparison
+- **Search Comparison:** Compares Linear Search vs Binary Search side by side to see which one took fewer steps and less time
+- **Graph Comparison:** Compares BFS vs DFS side by side with steps and time taken
+- **Complexity Summary:** Quick reference screen showing the theoretical Big-O time complexity for each operation
+
+### 8. System Controller & Safe Input
+- Interactive console menu to navigate through all operations
+- **Display All Results:** Shows the current contents of the Array, Stack, Queue, Linked List, and Graph all in one screen
+- **Safe Input Handling:** Checks user input so the program does not crash if a user enters letters instead of numbers or leaves an input empty
 
 ## Group Members
 
